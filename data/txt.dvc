@@ -1,0 +1,6 @@
+outs:
+- md5: 46bf43ecd601271813fa0a92a824d704.dir
+  size: 2309
+  nfiles: 1
+  hash: md5
+  path: txt
