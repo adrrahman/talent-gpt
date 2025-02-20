@@ -1,11 +1,13 @@
 import os
+
 from dotenv import load_dotenv
-import typing
-from langchain_core.output_parsers import PydanticOutputParser, JsonOutputParser
+from langchain_community.document_loaders import TextLoader
+from langchain_core.output_parsers import (
+    JsonOutputParser,
+)
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import AzureChatOpenAI
-from pydantic import BaseModel, Field, model_validator
-from langchain_community.document_loaders import TextLoader
+
 from talent_gpt.schema import Experience
 
 load_dotenv()
@@ -42,7 +44,6 @@ def extract_experience(resume_content: str):
             "resume_content": resume_content,
         }
     )
-    print(response)
     return response
 
 
