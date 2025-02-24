@@ -10,6 +10,7 @@ python = "^3.11"
 requests = "^2.32.3"
 langchain = "^0.3.17"
 langchain-openai = "^0.3.6"
+opik = "^1.5.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
